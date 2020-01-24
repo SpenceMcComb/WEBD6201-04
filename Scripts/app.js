@@ -55,7 +55,9 @@ let app;
         humanResourcesLink = document.getElementById("human-resources");
         humanResourcesLink.innerHTML = '<a class="nav-link" href="#"><i class="fas fa-user-friends"></i> Human Resources</a></li>';
 
-        
+        // Add the bottom navbar - https://getbootstrap.com/docs/4.4/components/navbar/
+        document.body.innerHTML = document.body.innerHTML + 
+            '<nav class="navbar fixed-bottom navbar-light bg-light"><a class="navbar-brand" href="#">&copy; CopyRight 2020</a></nav>';
     }
 
     // An an on-load event listener
