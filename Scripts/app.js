@@ -47,7 +47,15 @@ let app;
         humanResourcesLink.setAttribute("id", "human-resources");
         humanResourcesLink.setAttribute("class", "nav-item");
 
-       
+        // Insert the new link between " About Us" and " Contact Us".
+        navbar = navbar.childNodes[1]; 
+        navbar.insertBefore(humanResourcesLink, navbar.childNodes[9]);
+
+        // Add the actual link to HTML.
+        humanResourcesLink = document.getElementById("human-resources");
+        humanResourcesLink.innerHTML = '<a class="nav-link" href="#"><i class="fas fa-user-friends"></i> Human Resources</a></li>';
+
+        
     }
 
     // An an on-load event listener
